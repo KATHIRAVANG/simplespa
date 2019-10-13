@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+    <title>Two Way Data Binding</title>
+  </head>
+  <body>
+    Name: <input data-bind="input1" type="text" />
+    <span data-bind="input1"></span>
+    <hr />
+    Surname: <input data-bind="input2" type="text" />
+    <span data-bind="input2"></span>
+    <hr />
+    <button onclick="log()">See Scope Values</button>
+    <hr />
+    <button onclick="changeinput1()">Change input by click</button>
+
+    <script src="app.js"></script>
+  </body>
+</html>
